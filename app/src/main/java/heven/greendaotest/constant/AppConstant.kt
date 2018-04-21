@@ -8,4 +8,6 @@ import heven.greendaotest.BuildConfig
 object AppConstant {
     var DEBUG = BuildConfig.DEBUG // 是否 DEBUG 模式
     val AUTHOR = "HevenHolt"
+
+    val APP_BUGLY_ID = "1fc06bdc66"
 }

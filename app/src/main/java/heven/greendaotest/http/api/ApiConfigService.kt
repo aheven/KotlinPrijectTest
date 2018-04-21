@@ -1,7 +1,7 @@
 package heven.greendaotest.http.api
 
-import heven.greendaotest.bean.MainUrlBean
-import heven.greendaotest.http.BaseModel
+import heven.greendaotest.bean.RoomServerBean
+import heven.greendaotest.bean.BaseModel
 import io.reactivex.Observable
 import retrofit2.http.GET
 
@@ -9,6 +9,6 @@ import retrofit2.http.GET
  * Created by PC-201711161643$ on 2017/11/21 0021.
  */
 interface ApiConfigService {
-    @GET("config/domainUrl")
-    fun getMainUrl(): Observable<BaseModel<MainUrlBean>>
+    @GET("im/roomserver")
+    fun getRoomServer(): Observable<BaseModel<RoomServerBean>>
 }

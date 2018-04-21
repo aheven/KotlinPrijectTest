@@ -26,7 +26,7 @@ class ApiPublicParams {
     val API_PARAM_IMEI = "imei"
     val API_PARAM_NETWORK = "network"
 
-    var sApiParamToken: String = "0"
+    var sApiParamToken: String = "ED95D63EA251745BEE9C7C2D518E7C7E"
     var sApiParamChannel = getChannelName()
     var sApiParamImei = try {
         PhoneUtils.getIMEI()
@@ -73,7 +73,7 @@ class ApiPublicParams {
     }
 
     fun getUid(): Int {
-          return SPUtils.getInstance().getInt(StorageConstant.SP_UID)
+          return SPUtils.getInstance().getInt(StorageConstant.SP_UID,101114)
     }
 
     fun getRequestPubMap(): Map<String, String> {

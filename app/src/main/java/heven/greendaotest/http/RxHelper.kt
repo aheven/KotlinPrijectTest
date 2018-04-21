@@ -1,5 +1,6 @@
 package heven.greendaotest.http
 
+import heven.greendaotest.bean.BaseModel
 import heven.greendaotest.constant.AppConstant
 import heven.greendaotest.utils.Logger
 import io.reactivex.Observable

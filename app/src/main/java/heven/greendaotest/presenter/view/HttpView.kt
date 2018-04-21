@@ -1,10 +1,10 @@
 package heven.greendaotest.presenter.view
 
-import heven.greendaotest.bean.MainUrlBean
+import heven.greendaotest.bean.RoomServerBean
 
 /**
  * Created by PC-201711161643$ on 2017/11/22 0022.
  */
-interface HttpView{
-    fun getMainUrlSuccess(mainUrlBean: MainUrlBean){}
+interface HttpView {
+    fun getRoomServerSuccess(roomServerBean: RoomServerBean) {}
 }

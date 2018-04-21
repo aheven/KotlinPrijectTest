@@ -14,19 +14,19 @@ import java.util.concurrent.TimeUnit
 /**
  * Created by PC-201711161643$ on 2017/11/22 0022.
  */
-class HttpPresenterIml<E, out V>(private val view: V) : HttpPresenter where V : LifecycleProvider<E>, V:HttpView{
+class HttpPresenterIml<E, out V>(private val view: V) : HttpPresenter where V : LifecycleProvider<E>, V : HttpView {
 
-    override fun getMainUrl() {
-        ApiConfig.getMainUrl(RxObserver({
-            view.getMainUrlSuccess(it)
-        }),view)
+    override fun getRoomServer() {
+        ApiConfig.getRoomServer(RxObserver({
+            view.getRoomServerSuccess(it)
+        }), view)
     }
 
     override fun timeTick() {
-        Observable.interval(0,1,TimeUnit.SECONDS)
+        Observable.interval(0, 3, TimeUnit.SECONDS)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .bindToLifecycle(view)
-                .subscribe { Logger.e("timeTick",it.toString()) }
+                .subscribe { Logger.e("timeTick", it.toString()) }
     }
 }
