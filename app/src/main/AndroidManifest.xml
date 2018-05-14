@@ -35,9 +35,16 @@
             android:name=".ui.SurfaceFrameAnimationActivity"
             android:label="@string/name_activity_frame_surface" />
 
+        <activity android:name=".ui.RiseNumberActivity"
+            android:label="@string/name_activity_rise_number" />
+
+        <activity android:name=".ui.BottomBarActivity"
+            android:label="@string/name_activity_bottom_bar" />
+
         <activity
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
             android:theme="@android:style/Theme.Translucent" />
+
     </application>
 
 </manifest>

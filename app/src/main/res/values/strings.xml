@@ -3,4 +3,6 @@
     <string name="name_activity_network">网络请求</string>
     <string name="name_activity_netty">netty</string>
     <string name="name_activity_frame_surface">礼物直播特效</string>
+    <string name="name_activity_rise_number">数字跳转动画</string>
+    <string name="name_activity_bottom_bar">底部标签</string>
 </resources>

@@ -17,6 +17,8 @@ class MainActivity : BaseActivity(), HttpView {
             R.id.network -> NetworkActivity.start(this)
             R.id.netty -> NettyActivity.start(this)
             R.id.surfaceFrameAnimation -> SurfaceFrameAnimationActivity.start(this)
+            R.id.riseNumber -> RiseNumberActivity.start(this)
+            R.id.bottomBar -> BottomBarActivity.start(this)
         }
     }
 }

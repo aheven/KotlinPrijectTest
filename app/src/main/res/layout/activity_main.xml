@@ -28,4 +28,18 @@
         android:layout_height="wrap_content"
         android:text="帧动画" />
 
+    <Button
+        android:id="@+id/riseNumber"
+        android:text="数字跳动"
+        android:onClick="clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bottomBar"
+        android:text="底部标签"
+        android:onClick="clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

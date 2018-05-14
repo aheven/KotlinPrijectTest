@@ -11,6 +11,7 @@ import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
 import android.graphics.RectF;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -40,6 +41,7 @@ public class SpecialGiftSurfaceView extends SurfaceView implements SurfaceHolder
     private List<String> mFilePathListAlpha = new ArrayList<>();
     private HandlerThread handlerThread = new HandlerThread("surfaceview");
     private RectF mRectF;
+    private Rect mBitmapRectF;
     private OnFrameAnimationListener mListener;
     private Handler mWorkHandler;
 
@@ -180,11 +182,13 @@ public class SpecialGiftSurfaceView extends SurfaceView implements SurfaceHolder
             if (diskBitmap != null) {
                 canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
-                int screenHalfHeight= ScreenUtils.getScreenHeight() / 2 - BarUtils.getNavBarHeight() - BarUtils.getStatusBarHeight();
+                int screenHalfHeight = getHeight() / 2;
+                int width = diskBitmap.getWidth() * getHeight() / diskBitmap.getHeight();
                 mRectF = new RectF(SpecialGiftSurfaceView.this.getLeft(),
                         screenHalfHeight - diskBitmap.getHeight() / 2,
-                        SpecialGiftSurfaceView.this.getWidth(),
+                        width,
                         screenHalfHeight + diskBitmap.getHeight() / 2);
+                mBitmapRectF = new Rect(0, 0, width, getHeight());
                 canvas.drawBitmap(diskBitmap, null, mRectF, null);
             }
             mHolder.unlockCanvasAndPost(canvas);

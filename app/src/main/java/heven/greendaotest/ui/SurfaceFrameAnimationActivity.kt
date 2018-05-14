@@ -17,10 +17,10 @@ class SurfaceFrameAnimationActivity : BaseActivity() {
         when (view.id) {
             R.id.start -> {
                 val paths = arrayListOf<String>()
-                val list = resources.assets.list("success")
+                val list = resources.assets.list("richLoading")
 
                 list.forEach {
-                    paths.add("success/$it")
+                    paths.add("richLoading/$it")
                 }
                 specialGiftSurfaceView.startAnimation(paths)
             }
