@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".SampleApplication"
@@ -40,6 +41,15 @@
 
         <activity android:name=".ui.BottomBarActivity"
             android:label="@string/name_activity_bottom_bar" />
+
+        <activity android:name=".ui.Dagger2Activity"
+            android:label="@string/name_activity_dagger2" />
+
+        <activity android:name=".ui.GpuImageActivity"
+            android:label="@string/name_activity_gpu_image" />
+
+        <activity android:name=".ui.DataBindingActivity"
+            android:label="@string/name_activity_data_binding" />
 
         <activity
             android:name="com.tencent.bugly.beta.ui.BetaActivity"

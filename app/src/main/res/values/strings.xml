@@ -5,4 +5,9 @@
     <string name="name_activity_frame_surface">礼物直播特效</string>
     <string name="name_activity_rise_number">数字跳转动画</string>
     <string name="name_activity_bottom_bar">底部标签</string>
+    <string name="name_activity_dagger2">dagger2</string>
+    <string name="name_activity_gpu_image">GPUImage</string>
+    <string name="name_activity_data_binding">数据绑定</string>
+
+    <string name="image_url">https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=a3892254b81bb0519b29bb7a5713b1d1/f603918fa0ec08fa5bc33dd152ee3d6d54fbda80.jpg</string>
 </resources>

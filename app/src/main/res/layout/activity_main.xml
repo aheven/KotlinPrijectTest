@@ -42,4 +42,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/dagger2"
+        android:text="dagger2"
+        android:onClick="clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/gpuImage"
+        android:text="GPUImage"
+        android:onClick="clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/dataBinding"
+        android:text="dataBinding"
+        android:onClick="clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

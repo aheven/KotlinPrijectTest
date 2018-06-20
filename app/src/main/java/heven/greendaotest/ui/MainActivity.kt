@@ -19,6 +19,9 @@ class MainActivity : BaseActivity(), HttpView {
             R.id.surfaceFrameAnimation -> SurfaceFrameAnimationActivity.start(this)
             R.id.riseNumber -> RiseNumberActivity.start(this)
             R.id.bottomBar -> BottomBarActivity.start(this)
+            R.id.dagger2 -> Dagger2Activity.start(this)
+            R.id.gpuImage->GpuImageActivity.start(this)
+            R.id.dataBinding->DataBindingActivity.start(this)
         }
     }
 }

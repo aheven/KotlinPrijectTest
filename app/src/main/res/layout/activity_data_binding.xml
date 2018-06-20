@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="heven.greendaotest.bean.User" />
+
+        <import type="com.blankj.utilcode.util.StringUtils" />
+
+        <variable
+            name="user"
+            type="User" />
+    </data>
+    <!--原先的根节点（Root Element）-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{StringUtils.reverse(user.firstName)}" />
+
+        <ImageView
+            android:imageUrl="@{user.headImage}"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view)->user.changeUser()}"
+            android:text="changeuser" />
+
+    </LinearLayout>
+</layout>
